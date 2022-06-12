@@ -85,6 +85,20 @@ html,body {
     font-weight: bold;
     font-family: "Poppins", sans-serif;
 }
+
+.btn-load {
+    background-color: var(--color-salmon);
+    color: #F0F0F0;
+    border: none;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 15.25rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin: 1.875rem;
+}
    
 
 
