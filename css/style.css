@@ -1,0 +1,90 @@
+/* ELEMENTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+:root {
+    --color-green: #38AF90;
+    --color-white: #fff;
+    --back-white: #E5E5E5;
+    --color-gray:#797979;
+    --back-gray: #F0F0F0;
+    --color-salmon: #DD7E92;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html,body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* CLASSES, ID's*/
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-green);
+    padding: 10px;
+
+}
+
+.nav-main h1 {
+    display: flex;
+    margin: 0%;
+    font-size: 1.125rem;
+    align-items: center;
+}
+
+.news-container {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-container h2 {
+    font-size: 1.5rem;
+    color: var(--color-gray);
+}
+
+.card-news {
+    background-color: var(--back-gray);
+    border-radius: 0.5rem;
+}
+
+.card-news h3 {
+    color: var(--color-green);
+    font-size: 1rem;
+}
+
+.card-news h4 {
+    color: var(--color-gray);
+    font-size: 0.75rem;
+}
+
+.card-news h5{
+    color: var(--color-green);
+    font-size: 0.625rem;
+}
+
+.card-news p {
+    color: var(--color-gray);
+    font-size: 0.625rem;
+}
+
+.btn-card-news {
+    color: var(--color-salmon);
+    border: none;
+    font-size: 0.875rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+   
+
+
