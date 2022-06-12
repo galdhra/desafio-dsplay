@@ -10,6 +10,8 @@
     --color-gray:#797979;
     --back-gray: #F0F0F0;
     --color-salmon: #DD7E92;
+    --color-black: #000;
+
 }
 
 *{
@@ -56,6 +58,8 @@ html,body {
 .card-news {
     background-color: var(--back-gray);
     border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
 }
 
 .card-news h3 {
@@ -99,6 +103,62 @@ html,body {
     font-size: 1.125rem;
     margin: 1.875rem;
 }
-   
 
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-container h2 {
+    color: var(--color-green);
+}
+   
+.game-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white);
+    color: var(--color-green);
+
+}
+
+.game-img img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.game-card {
+    background-color: var(--back-gray);
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px 0px #00000040;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    max-block-size: 300px;
+}
+
+.game-card h3 {
+    color: var(--color-gray);
+    font-size: 1.125rem;
+    margin:0;
+}
+
+.game-card h4 {
+    margin:0;
+}
+
+
+.differ {
+    color: var(--color-gray);
+    font-size: 0.875rem;
+    font-weight: normal;
+}
+
+.grade {
+    font-size: 2.25rem;
+    margin:0;
+}
 
