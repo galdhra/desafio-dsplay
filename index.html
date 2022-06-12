@@ -20,7 +20,7 @@
             </nav>
         </header>
         <main>
-            <section class="news-container">
+            <section id="news" class="news-container">
                 <h2>Últimas notícias</h2>
                 <div class="card-news">
                     <h3>Título principal da notícia</h3>
@@ -60,7 +60,7 @@
                 </div>
                 <button class="btn-load">Carregar mais</button>
             </section>
-            <section class="game-container">
+            <section id= game class="game-container">
                 <h2>Jogos</h2>
                 <div class="game-img">
                     <div class="game-card">
@@ -83,31 +83,42 @@
                     </div>                
                 </div>
             </section>
-            <section>
+            <section id="subscribe">
                 <h2>Faça sua inscrição</h2>
-                <div>
-                    <input type="text" placeholder="Nome Completo">
-                    <input type="text" placeholder="Email">                
+                <div class="subscribe-container">
+                    <div class="subs-info">
+                        <input class="subs-name" type="text" placeholder="Nome Completo">
+                        <input class="subs-email" type="text" placeholder="Email">                
+                    </div>
+                    <div class="subs-platform">
+                        <h3>Qual sua plataforma preferida?</h3>
+                        <div class="subs-favorite">
+                            <div class="subs-division">
+                                <input class="subs-poll" type="radio" name="poll" id="ctrl-plat-1">
+                                <label for="ctrl1">PC</label>  
+                            </div>
+                            <div class="subs-division">
+                                <input class="subs-poll" type="radio" name="poll" id="ctrl-plat-2">
+                                <label for="ctrl2">Xbox</label>
+                            </div>
+                            <div class="subs-division">
+                                <input class="subs-poll" type="radio" name="poll" id="ctrl-plat-3">
+                                <label for="ctrl3">Playstation</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <input class="info-send" type="checkbox" name="ctrl-info" id="ctrl-info" checked>
+                        <label for="ctrl-info">Desejo receber novidades.</label>
+                    </div>
+                    <div>
+                        <input type="button" value="Enviar">
+                    </div>
+                    <div>
+                        <input type="button" value="Limpar">
+                    </div>
                 </div>
-                <div>
-                    <h3>Qual sua plataforma preferida?</h3>
-                   <input type="radio" name="PC" id="ctrl-plat-1">
-                   <label for="ctrl-plat-1">PC</label>
-                   <input type="radio" name="Xbox" id="ctrl-plat-2">
-                   <label for="ctrl-plat-2">Xbox</label>
-                   <input type="radio" name="Playstation" id="ctrl-plat-3">
-                   <label for="ctrl-plat-3">Playstation</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="ctrl-info" id="ctrl-info">
-                    <label for="ctrl-info">Desejo receber novidades.</label>
-                </div>
-                <div>
-                    <input type="button" value="Enviar">
-                </div>
-                <div>
-                    <input type="button" value="Limpar">
-                </div>
+
             </section>
         </main>
         <footer>

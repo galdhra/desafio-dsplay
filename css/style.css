@@ -162,3 +162,135 @@ html,body {
     margin:0;
 }
 
+#subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subscribe h2 {
+    color: var(--color-gray);
+}
+
+.subscribe-container {
+    background-color: var(--back-gray);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.subs-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.subs-name {
+    margin: 50px 10px 10px 10px;
+}
+
+.subs-email {
+    margin: 10px;
+}
+
+.subs-info input {
+    background: #FFFFFF;
+    border: 1px solid #797979;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    max-width: 280px;
+    width: 90%;
+}
+
+.subs-info input::placeholder {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #C4C4C4;
+}
+
+.subs-platform {
+    margin: 0 40px 0 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subs-platform h3 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: var(--color-gray);
+    margin-bottom: 0;
+}
+
+.subs-favorite {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    color: #797979;
+    margin-bottom: 20px;
+    
+}
+
+.subs-division {
+    display: flex;
+    padding: 3px;
+}
+
+.subs-poll {
+    cursor: pointer;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    position: relative;
+    }
+
+
+.subs-poll::before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    background-color: var(--color-gray);
+    border-radius: 50%;
+    opacity: 0;
+    box-sizing: border-box;
+}
+.subs-poll:checked:before {
+    opacity: 1;
+}
+
+.info {
+}
+
+.info-send {
+    cursor: pointer;
+    appearance: none;
+    position: relative;
+    width: 23px;
+    height: 23px;
+    background:var(--color-white);
+    border: 1px solid #999999;
+    opacity:0;
+}
+
+.info-send::before {
+    content: '';
+
+}
+
