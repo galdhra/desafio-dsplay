@@ -179,6 +179,10 @@ html,body {
     display: flex;
     flex-direction: column;
     border-radius: 8px;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
 }
 
 .subs-info {
@@ -216,7 +220,6 @@ html,body {
 }
 
 .subs-platform {
-    margin: 0 40px 0 10px;
     display: flex;
     flex-direction: column;
 
@@ -244,7 +247,7 @@ html,body {
 
 .subs-division {
     display: flex;
-    padding: 3px;
+ 
 }
 
 .subs-poll {
@@ -319,6 +322,38 @@ html,body {
 .info-send:checked::before {
     opacity: 1;
 }
+
+.send-button {
+    appearance: none;
+    background: var(--color-salmon);
+    border: 0;
+    width: 244px;
+    height: 67px;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-white);
+    margin: 15px;
+}
+
+.clean-button {
+    appearance: none;
+    background: var(--color-white);
+    border: 0;
+    width: 244px;
+    height: 67px;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-salmon);
+    margin: 5px 15px 15px 15px;
+}
+
+
 
 
 
