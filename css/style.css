@@ -11,6 +11,8 @@
     --back-gray: #F0F0F0;
     --color-salmon: #DD7E92;
     --color-black: #000;
+    --dark-gray: #999999;
+    --box-black:#00000040;
 
 }
 
@@ -195,7 +197,7 @@ html,body {
 }
 
 .subs-info input {
-    background: #FFFFFF;
+    background: var(--color-white);
     border: 1px solid #797979;
     border-radius: 4px;
     font-family: "Poppins", sans-serif;
@@ -235,7 +237,7 @@ html,body {
     flex-direction: column;
     font-weight: 400;
     font-size: 16px;
-    color: #797979;
+    color: var(--color-gray);
     margin-bottom: 20px;
     
 }
@@ -250,7 +252,7 @@ html,body {
     appearance: none;
     width: 23px;
     height: 23px;
-    background: #FFFFFF;
+    background: var(--color-white);
     border: 1px solid #999999;
     border-radius: 50%;
     display: flex;
@@ -276,21 +278,48 @@ html,body {
 }
 
 .info {
+    display: flex;
+    align-items: center;
 }
+ .info label {
+    box-sizing: border-box;
+    color: var(--color-gray);
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 10px;
+ }
 
 .info-send {
     cursor: pointer;
     appearance: none;
-    position: relative;
     width: 23px;
     height: 23px;
-    background:var(--color-white);
+    background: var(--color-white);
     border: 1px solid #999999;
-    opacity:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    position: relative;
 }
 
 .info-send::before {
     content: '';
-
+    width: 9px;
+    height: 15px;
+    position: absolute;
+    opacity: 0;
+    box-sizing: border-box;
+    border-bottom: 3px solid var(--color-gray);
+    border-right: 3px solid var(--color-gray);
+    transform: rotate(45deg);
+    top:1px;
 }
+
+.info-send:checked::before {
+    opacity: 1;
+}
+
+
+
 
