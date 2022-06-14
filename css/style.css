@@ -1,6 +1,6 @@
 /* ELEMENTS*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 :root {
   --color-green: #38af90;
@@ -34,7 +34,7 @@ body {
 
 header {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
-  position:fixed;
+  position: fixed;
   width: 100%;
   background-color: var(--color-green);
   display: flex;
@@ -80,24 +80,24 @@ footer {
   align-items: center;
 }
 
-.nav-tags{
-    display: none;
-    visibility: hidden;
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
+.nav-tags {
+  display: none;
+  visibility: hidden;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
 }
-.nav-tags a{
-    padding: 30px 15px;
-}
-
-.right-organizer{
-    display: flex;
-    align-items: center;
+.nav-tags a {
+  padding: 30px 15px;
 }
 
-.right-organizer img{
-    padding: 15px;
+.right-organizer {
+  display: flex;
+  align-items: center;
+}
+
+.right-organizer img {
+  padding: 15px;
 }
 
 .news-container h2 {
@@ -135,10 +135,10 @@ footer {
   font-size: 0.625rem;
 }
 
-.card-line{
-    margin: 0;
-    padding: 0;
-    border: 1px solid rgba(56, 175, 144, 1);
+.card-line {
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(56, 175, 144, 1);
 }
 
 .btn-card-news {
@@ -196,8 +196,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 300px; 
-  max-height: 326px;  
+  max-width: 300px;
+  max-height: 326px;
 }
 
 .game-card h3 {
@@ -211,8 +211,8 @@ footer {
   margin: 0;
 }
 
-.game-card p{
-    padding:15px 100px;
+.game-card p {
+  padding: 15px 100px;
 }
 
 .differ {
@@ -431,88 +431,86 @@ footer {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .nav-main {
+    flex-direction: row;
+    width: 100%;
+  }
 
-@media(min-width:768px){
-    .nav-main{
-        flex-direction: row;
-        width: 100%;
-    }
+  .nav-tags {
+    display: flex;
+    visibility: visible;
+  }
 
-    .nav-tags{
-        display: flex;
-        visibility: visible;
-    }
+  .news-container h2 {
+    font-size: 36px;
+  }
 
-    .news-container h2{
-        font-size: 36px;
-    }
+  .news-container h3 {
+    font-size: 24px;
+  }
+  .news-container h4 {
+    font-size: 16px;
+  }
 
-    .news-container h3{
-        font-size: 24px;
-    }
-    .news-container h4{
-        font-size: 16px;
-    }
+  .card-news {
+    max-width: 990px;
+    padding: 15px 40px;
+    margin: 20px 10px;
+  }
 
-    .card-news {
-        max-width: 990px;
-        padding: 15px 40px;
-        margin: 20px 10px;
-    }
+  .game-img {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    max-height: 70%;
+  }
 
-    .game-img {
-        display: flex;
-        flex-direction: row;
-        max-width: 100%;
-        max-height: 70%;
-    }
+  .game-container {
+    height: 559px;
+    justify-content: center;
+  }
 
-    .game-container{
-        height: 559px;
-        justify-content: center;
-    }
+  .game-container h2 {
+    display: flex;
+    font-size: 36px;
+    margin-bottom: 70px;
+    margin-top: 35px;
+  }
 
-    .game-container h2 {
-        display: flex;
-        font-size: 36px;
-        margin-bottom: 70px;
-        margin-top: 35px;
-    }
-    
-    .game-card{
-        margin-bottom: 70px;
-    }
+  .game-card {
+    margin-bottom: 70px;
+  }
 
-    #subscribe h2{
-        font-size: 36px;
-    }
+  #subscribe h2 {
+    font-size: 36px;
+  }
 
-    .subscribe-container {
-        width: 790px;
-        height: 522px;
-        padding: 0 75px 0 75px;
-        margin-bottom: 60px;
+  .subscribe-container {
+    width: 790px;
+    height: 522px;
+    padding: 0 75px 0 75px;
+    margin-bottom: 60px;
+  }
 
-    }
+  .subs-info input {
+    max-width: 642px;
+  }
 
-    .subs-info input{
-       max-width: 642px;
-    }
+  .clean-button {
+    margin: 15px;
+  }
 
-    .clean-button{
-        margin: 15px;
-    }
+  .info-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+  }
 
-    .info-buttons{
-        display: flex;
-        flex-direction: row;      
-        margin-top: 40px;
-    }
-
-    footer{
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 40px 100px;
-    }
+  footer {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 100px;
+  }
 }
